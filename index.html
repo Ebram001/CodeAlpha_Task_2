@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Scheduler</title>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4 text-center">Task Scheduler</h1>
+        <form id="taskForm">
+            <div class="form-group">
+                <label for="taskName">Task Name:</label>
+                <input type="text" class="form-control" id="taskName" required>
+            </div>
+           <!-- Modify the taskDate input to include both date and time -->
+            <div class="form-group">
+              <label for="taskDateTime">Task Date and Time:</label>
+              <input type="datetime-local" class="form-control" id="taskDateTime" required>
+            </div>
+            <div class="form-group">
+              <label for="userEmail">User Email:</label>
+              <input type="email" class="form-control" id="userEmail" required>
+            </div>
+
+            <button type="button" class="btn btn-outline-success my-3" id="addTask">Add Task</button>
+        </form>
+        <div class="mt-4" id="taskList"></div>
+    </div>
+    
+
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
